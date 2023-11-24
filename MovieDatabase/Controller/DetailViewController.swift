@@ -37,14 +37,12 @@ class DetailViewController: UIViewController {
             posterImage.sd_setImage(with: URL(string: Constants.API.posterUrl.appending(movie.posterPath ?? "")))
             
            
-            infoMovie.text = "Original Title: \(movie.originalTitle ?? "")\n" +
+            infoMovie.text = "Original Language: \(movie.originalLanguage ?? "")\n" +
                          //    "Budget: \(movie.budget ?? 0)\n" +
                         //     "Genres: \(movie.genres?.compactMap { $0.name }.joined(separator: ", ") ?? "")\n" +
                              "Popularity: \(movie.popularity ?? 0.0)"
-                        
             
-           // infoMovie.text = "Original Title: \(movie.originalTitle ?? "")\n"
-            // Do any additional setup after loading the view.
+         
         }
     }
 
